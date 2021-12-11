@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>축가(祝歌)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+        * {margin: 0; padding: 0; margin: auto; font-family: 'Noto Sans KR', sans-serif;}
+        a {text-decoration: none; color: rgb(255, 255, 255); display: block;}
+        li {list-style: none;}
+        body {
+            text-align: center;            
+            color: rgba(31, 31, 31);
+        }
+        @keyframes body-ani{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 50%;
+            }
+            100%{
+                opacity: 100%;
+            }
+        }    
+        .main_img {
+            opacity: 0;
+            width: 100vw;
+            animation: body-ani 0.8s linear forwards;            
+        }
+        .main_img img{width: 100%;}
+        .title {
+            opacity: 0;
+            margin-top: 10vh;
+            animation: body-ani 0.5s 0.5s linear forwards;
+        }
+        .text {
+            opacity: 0;
+            display: flex;
+            align-content: center;
+            vertical-align: middle;
+            margin-top: 7vh;
+            margin-bottom: 10vh;
+            animation: body-ani 0.5s 1s linear forwards;
+        }
+        .text li {
+            height: 5vh;
+        }
+        .text li:nth-of-type(2) {
+            height: 10vh;
+        }
+        .text li:last-child {
+            opacity: 0;           
+            width: 165px;
+            height: 30px;
+            background: linear-gradient(45deg,rgb(255, 197, 90),orange);
+            border-radius: 10px;
+            animation: body-ani 0.5s 1.8s linear forwards;            
+        }
+
+        .text li:last-child:hover {
+            background:orchid;
+            transition: all 0.2s ease-in;
+            }
+                
+    </style>
+</head>
+<body>
+    <div class = "main_img">
+        <img src="src/KakaoTalk_20211020_173830950.jpg" alt="main_img">
+    </div>
+    <div class = "title">
+        <h1>축가(祝歌)</h1>
+    </div>
+    <div class="text">
+        <ul>
+            <li>2021년 12월 19일</li>
+            <li>민재와 민권의<br>결혼 1주년을 축하드리며..</li>
+            <li><a href = "https://youtu.be/pppUXG2odl0">뮤직비디오 보러가기</a></li>
+        </ul>    
+    </div>
+</body>
+</html>
