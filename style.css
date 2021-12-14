@@ -19,13 +19,13 @@ body {
     }
 }
 #wrap {
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 .main_img {
   opacity: 0; 
   width: 100%;
-  height: 50vw;  
+  height: 65vw;  
   background: url('./src/KakaoTalk_20211020_173830950.jpg') no-repeat top/contain;
   background-attachment: fixed;
   animation: body-ani 0.8s linear forwards;             
